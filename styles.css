@@ -6,7 +6,12 @@
     
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
+    
 
 background: hsla(145, 83%, 74%, 1);
 
@@ -18,14 +23,10 @@ background: -webkit-linear-gradient(180deg, hsla(145, 83%, 74%, 1) 0%, hsla(204,
 
 filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#87F4B5", endColorstr="#93CBF1", GradientType=1 );
 
-
-
-
 }
 
 a{
     text-decoration: none;
-    color: black;
 }
 
 ul{
@@ -33,7 +34,6 @@ ul{
     display: flex;
     text-decoration: none;
     border: none;
-
 }
 
 li{
@@ -43,17 +43,17 @@ li{
     border: none;
 }
 
-.nav{
-    display:flex;
-    justify-content:flex-end;
-
-
+.nav-bar{
+    justify-content:end;
+    position:fixed;
+    left: 1000px;
 }
 
 button{
     cursor: pointer;
     border-radius: 10px;
-    font-size: 20PX;height: 50px;
+    font-size: 20PX;
+    height: 50px;
     width: 100px; 
     background-color: rgb(39, 124, 244);
     color: aliceblue;
@@ -61,13 +61,12 @@ button{
     
 
 button:hover{
-    background-color:rgba(25, 220, 181, 0.447);
-
+    background-color:rgba(28, 220, 25, 0.674);
 }
 
 .btn1{
   border: none;
-  box-shadow: 1px;      
+  box-shadow: 1px;   
 }
 
 /*Inicio*/
@@ -78,14 +77,11 @@ button:hover{
     left: auto;
     right:auto;
     font-size: 20px;
-    
-
 }
 
 .home-container{
     display:flex; 
     justify-content: center;
-    
 }
 
 .home-picture{
@@ -107,8 +103,6 @@ button:hover{
     margin: 2px;  
 }
 
-
-
 .title{
    font-size: 50px;
 }
@@ -116,7 +110,6 @@ button:hover{
 .title h1{
    text-align: center;
 }
-
 
 .title h2{
     text-align: center;
@@ -135,7 +128,7 @@ button:hover{
     border: none;
 }
 
-/*Descripcion*/
+/*Descripción*/
 .description{
    height: 600px;
    padding: 50px;
@@ -143,21 +136,21 @@ button:hover{
    font-size: 40px;
 }
 
-.descripcion h1{
+.description h1{
     font-size: 100px;
     padding: 10px;
 }
 
 /*Productos*/
-
 .products{
 text-align: center;
-padding: 10px;
+padding: 50px;
 margin: 10px;
 }
 
 .products h1{
-    font-size: 50px;
+    font-size: 100px;
+    padding: 10px;
 }
 
 .container{
@@ -168,6 +161,7 @@ margin: 10px;
     margin: 10px;
     gap: 30px;
 }
+
 .card-container{
     height: 450px;
     width: 300px;
@@ -182,14 +176,11 @@ margin: 10px;
     box-shadow: -1px 15px 30px -12px;
     border-radius: 20px;
     cursor: pointer;
-    
 }
 
 .card-picture{
     height: 230px;
     width: 100%;
-   
-   
 }
 
 .card-picture img{
@@ -205,7 +196,7 @@ margin: 10px;
 
 .card-info h2{
  font-size: 30px;
- font-weight: 600;
+ font-weight: 800;
 }
 
 .card-info p{
@@ -222,7 +213,6 @@ margin: 10px;
 .card-btn{
     align-items: center;
     padding: 20px;
-    
 }
 
 .card-btn button{
@@ -238,21 +228,21 @@ margin: 10px;
 }
 
 .card-btn button:hover{
-background-color:rgba(25, 220, 181, 0.447) ;
+background-color:rgba(28, 220, 25, 0.674);
 }
-
 
 /*Contacto*/
 .contact-title h1{
    text-align: center;
-   font-size: 50px;
-   padding: 10px;
+   font-size: 100px;
+    padding: 10px;
 }
 
 .contact-container{
     display: flex;
     justify-content: space-evenly;
 }
+
 .form{
     padding: 2px;
     height: 650px;
@@ -263,12 +253,11 @@ background-color:rgba(25, 220, 181, 0.447) ;
 
 .form form{
     text-align: center;
-    
 }
 
 .form form h2{
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 label{
@@ -287,6 +276,7 @@ input{
 textarea{
     width: 580px;
     background-color: rgba(1, 248, 108, 0);
+    border: 2px solid;
 }
 
 .btn_send{
@@ -307,31 +297,23 @@ textarea{
     text-align:left;
     padding: 5px 5px 5px 5px;
     margin: 60px;
-
-    
 }
 
 .data h5{
     font-size: 20px;
     padding: 10px;
-    color: red;}
+    color: rgb(51, 0, 255);
+}
     
-
 .data p{
     font-size: 20px;
     text-align:justify;
     padding: 4px;
 }
 
-
-
-
-
-
 /*Pie de pagina*/
 
 footer{
-
    display: flex;
    justify-content: space-between;
    margin:80px 0px 0px ;
@@ -340,6 +322,7 @@ footer{
 
 footer p{
  font-size: 20px;
+ font-weight: 800;
  margin-bottom: 10px;
  padding: 10px;
 }
@@ -349,7 +332,6 @@ footer p{
  padding: 10px;
  text-align: center;
   cursor: pointer;
-    
 }
 
 .social-networks h3{
